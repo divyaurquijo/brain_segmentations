@@ -1,0 +1,3 @@
+{
+    "test_images_dir": "./brain_mri_unet3d/Data3D/test"
+}

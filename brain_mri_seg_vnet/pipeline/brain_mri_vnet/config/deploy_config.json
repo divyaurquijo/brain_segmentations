@@ -1,0 +1,31 @@
+{
+  "root": "/home/jupyter/mri_brain_segmentation/VNET/pipeline/",
+  "deploy_path": "./brain_mri_vnet/deploy/",
+  "display_name": "brain_mri_vnet",
+  "model_name": "pipeline_vnet",
+  "endpoint_name": "brain_mri_vnet_pipeline",
+  "project": "ataxia-rd-dev-358f",
+  "region": "europe-west1",
+  "serving_container_image_uri": "gcr.io/ataxia-rd-dev-358f/brain_mri_vnet_pipeline:latest",
+  "serving_container_health_route": "/ping",
+  "serving_container_predict_route": "/predictions/brain_mri_vnet",
+  "serving_container_ports": 8081,
+  "machine_type": "n1-standard-4",
+  "accelerator_count": 2,
+  "accelerator_type": "NVIDIA_TESLA_T4",
+  "service_account": "em52-sa-rd-ataxia-dev@ataxia-rd-dev-358f.iam.gserviceaccount.com",
+  "instances": [
+    {
+      "bucket_input": "brain_mri_predictions"
+    },
+    {
+      "objects_input": [
+        "test_images/vnet/TCGA_DU_7298_19910324.tif",
+        "test_images/vnet/TCGA_DU_7298_19910324_mask.tif"
+      ]
+    },
+    {
+      "bucket_output": "vnet_pipeline"
+    }
+  ]
+}

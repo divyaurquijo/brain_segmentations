@@ -1,0 +1,5 @@
+data_config: "/home/jupyter/mri_brain_segmentation/pipelines/UNET3D/brain_mri_unet3d/config/data_config.json"
+train_config: "/home/jupyter/mri_brain_segmentation/pipelines/UNET3D/brain_mri_unet3d/config/train_config.json"
+model_config: "/home/jupyter/mri_brain_segmentation/pipelines/UNET3D/brain_mri_unet3d/config/model_config.json"
+deploy_config: "/home/jupyter/mri_brain_segmentation/pipelines/UNET3D/brain_mri_unet3d/config/deploy_config.json"
+evaluation_config: "/home/jupyter/mri_brain_segmentation/pipelines/UNET3D/brain_mri_unet3d/config/evaluation_config.json"

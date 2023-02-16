@@ -1,0 +1,4 @@
+data_config: "./brain_mri_vnet/config/data_config.json"
+train_config: "./brain_mri_vnet/config/train_config.json"
+model_config: "./brain_mri_vnet/config/model_config.json"
+deploy_config: "./brain_mri_vnet/config/deploy_config.json"

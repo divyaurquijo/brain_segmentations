@@ -1,0 +1,16 @@
+{
+  "instances": [
+    {
+      "bucket_input": "brain_mri_predictions"
+    },
+    {
+      "objects_input": [
+        "test_images/vnet/TCGA_DU_7298_19910324.tif",
+        "test_images/vnet/TCGA_DU_7298_19910324_mask.tif"
+      ]
+    },
+    {
+      "bucket_output": "brain_mri_predictions"
+    }
+  ]
+}

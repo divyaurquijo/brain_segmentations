@@ -1,0 +1,5 @@
+{
+    "elu": true,
+    "in_channels": 1,
+    "classes": 3
+}

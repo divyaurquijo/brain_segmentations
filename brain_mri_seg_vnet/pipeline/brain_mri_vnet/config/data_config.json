@@ -1,0 +1,10 @@
+{
+    "train_images_dir": "./brain_mri_vnet/Data3D/train",
+    "val_images_dir": "./brain_mri_vnet/Data3D/val",
+    "test_images_dir": "./brain_mri_vnet/Data3D/test",
+    "use_cache": false,
+    "pre_transform": null,
+    "batch_size": 1,
+    "shuffle_train": true,
+    "shuffle_val": false
+}

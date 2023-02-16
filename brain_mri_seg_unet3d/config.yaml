@@ -1,0 +1,10 @@
+workerPoolSpecs:
+  machineSpec:
+    machineType: n1-standard-8
+    acceleratorType: NVIDIA_TESLA_K80
+    acceleratorCount: 1
+  replicaCount: 1
+  containerSpec:
+    imageUri: europe-docker.pkg.dev/vertex-ai/training/pytorch-gpu.1-11:latest
+serviceAccount:
+  em52-sa-vertex-workbench-dev@ataxia-rd-dev-358f.iam.gserviceaccount.com

@@ -1,0 +1,61 @@
+{
+  "root": "/home/jupyter/mri_brain_segmentation/pipelines/UNET3D/",
+  "deploy_path": "/home/jupyter/mri_brain_segmentation/pipelines/UNET3D/brain_mri_unet3d/deploy/",
+  "display_name": "brain_mri_unet3d",
+  "model_name": "pipeline_unet3d",
+  "endpoint_name": "brain_mri_unet3d_pipeline",
+  "project": "ataxia-rd-dev-358f",
+  "region": "europe-west1",
+  "serving_container_image_uri": "gcr.io/ataxia-rd-dev-358f/brain_mri_unet3d_pipeline:latest",
+  "serving_container_health_route": "/ping",
+  "serving_container_predict_route": "/predictions/brain_mri_unet3d",
+  "serving_container_ports": 8081,
+  "machine_type": "n1-standard-4",
+  "accelerator_count": 2,
+  "accelerator_type": "NVIDIA_TESLA_T4",
+  "service_account": "em52-sa-rd-ataxia-dev@ataxia-rd-dev-358f.iam.gserviceaccount.com",
+  "instances": [
+    {
+      "bucket_input": "brain_mri_predictions"
+    },
+    {
+      "objects_input": [
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_1.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_2.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_3.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_4.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_5.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_6.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_7.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_8.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_9.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_10.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_11.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_12.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_13.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_14.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_15.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_16.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_17.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_18.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_19.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_20.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_21.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_22.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_23.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_24.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_25.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_26.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_27.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_28.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_29.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_30.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_31.tif",
+        "test_images/test3D_sclices/TCGA_HT_7882_19970125_32.tif"
+      ]
+    },
+    {
+      "bucket_output": "unet3d_pipeline"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+        "instances": [
+                {
+                        "bucket_input": "brain_mri_predictions"
+                },
+                {
+                        "objects_input": [
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_1.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_2.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_3.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_4.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_5.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_6.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_7.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_8.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_9.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_10.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_11.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_12.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_13.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_14.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_15.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_16.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_17.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_18.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_19.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_20.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_21.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_22.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_23.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_24.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_25.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_26.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_27.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_28.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_29.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_30.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_31.tif",
+                                "test_images/test3D_sclices/TCGA_HT_7882_19970125_32.tif"
+                        ]
+                },
+                {
+                        "bucket_output": "brain_mri_predictions"
+                }
+        ]
+}

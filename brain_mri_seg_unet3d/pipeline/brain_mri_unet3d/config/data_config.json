@@ -1,0 +1,7 @@
+{
+    "train_val_images_dir": "./brain_mri_unet3d/Data3D/train/",
+    "image_size": 128,
+    "validation_cases": 3,
+    "batch_size": 4,
+    "shuffle": true
+}
